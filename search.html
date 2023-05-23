@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\search.css">
+    <link rel="stylesheet" href="css\navbar_head_body.css">
+    <title>VALORANT Encyclopedia</title>
+    <link rel="icon" type="image/png" href="media\img\icons\V.png">
+</head>
+
+<body>
+    <div class="page-container">
+      <div class="head-container">
+        <div class="nav-wrapper">
+          <div class="left-side">
+            <a href="index.html" class="top-left-logo">
+              <img src="media\img\icons\V.png" alt="VALORANT Logo">
+            </a>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item"><a href="agents.html">Agents</a></li>
+            </ul>
+          </div>
+          <div class="right-side">
+            <li class="nav-item"><a href="search.html">Search</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="header-and-search-container">
+            <div class="search-bar-container">
+                <form action="search.html" method="get" onsubmit="search(event)" class="search-bar">
+                    <input id="input" type="text" name="valorantagents" placeholder="Enter An Agent's Name...">
+                    <button id="submit-button">Go</button>
+                </form>
+            </div>
+            <h1 class="header">Agents</h1>
+            <p class="paragraph">Enter the name of the agent that you're interested in and learn about their abilites.</p>
+      </div>
+                <div class="ValoAgent_card">
+                    <div id="agentName"agentName></div>
+                    <div id="agentRole"agentRole></div>
+                    <img id="agentImg"agentImg>
+                    <audio id="agentVoiceLine"agentVoiceLine> <!-- Insert audio tag --></audio>
+                    <div id="agentDescription"agentDescription></div>
+                    <div id="agentAbility1"agentAbility1></div>
+                    <div id="agentAbility1Desc"agentAbility1Desc></div>
+                    <img id="agentAbility1IMG"agentAbility1IMG>
+                    <div id="agentAbility2"agentAbility2></div>
+                    <div id="agentAbility2Desc"agentAbility2Desc></div>
+                    <img id="agentAbility2IMG"agentAbility2IMG>
+                    <div id="agentAbility3"agentAbility3></div>
+                    <div id="agentAbility3Desc"agentAbility3Desc></div>
+                    <img id="agentAbility3IMG"agentAbility3IMG>
+                    <div id="agentUltimate"agentUltimate></div>
+                    <div id="agentUltimateDesc"agentUltimateDesc></div>
+                    <img id="agentUltimateIMG"agentUltimateIMG>
+                </div>
+    </div>
+<script src="JS\API.js"></script>
+</body>
+</html>

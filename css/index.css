@@ -1,0 +1,126 @@
+.page-container {
+    width: 1400px;
+    margin: 30px auto;
+    
+}
+
+@media (max-width: 1300px) {
+    .homepage-container {
+      width: 100%;
+      padding: 20px;
+      flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage-splash.paragraph {
+        width: 50%;
+      }
+  }
+
+
+.body-container {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    grid-template-rows: 50px;
+    grid-gap: 20px;
+}
+
+.h1 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-size: 40px;
+}
+
+.paragraph {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    font-size: 25px;
+}
+
+.paragraph2 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.homepage-splash-text{
+    width: 400px;
+    height: auto;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    z-index: -999;
+}
+
+.homepage-splash {
+    width: 600px;
+    height: auto;
+    grid-column: 3 / 4;
+    position: relative;
+    top: 50px;
+}
+
+
+.about-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-column: 1 / 2;
+    padding: 20px;
+    background-color: #a3323b;
+    border-radius: 10px 0px 10px 0px;
+        box-shadow: 0px 10px #461418;
+        padding: 20px;
+        border: 50px #80252d;
+        border-radius: 10px 0px 10px 0px;
+    transition: 0.3s ease;
+}
+
+.search-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-column: 2 / 3;
+    padding: 20px;
+    background-color: #a3323b;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 0px 10px #461418;
+        padding: 20px;
+        border: 50px #80252d;
+        border-radius: 10px 0px 10px 0px;
+    transition: 0.3s ease;
+}
+
+.about-button a, .search-button a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.about-button:hover, .search-button:hover {
+    background-color: #f34e5b;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.about-button:active, .search-button:active {
+    transform: scale(0.9);
+    background-color: #641c22;
+}
+
+
+h1 {
+    text-shadow: 5px 5px #80252d;
+}
+
+p {
+    margin: 10px;
+    line-height: 50px;
+}
+
+footer {
+    padding: 30px;
+    background-color: #5e1319;
+}
+
